@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageMLB"
+        android:layout_width="210dp"
+        android:layout_height="147dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="mlb"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageNFL"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/mlb" />
+
+    <ImageButton
+        android:id="@+id/imageMLS"
+        android:layout_width="192dp"
+        android:layout_height="260dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="mls"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/imageNFL"
+        app:layout_constraintEnd_toStartOf="@+id/imageNBA"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/mls" />
+
+    <ImageButton
+        android:id="@+id/imageNBA"
+        android:layout_width="171dp"
+        android:layout_height="255dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="nba"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/imageNHL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageMLS"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/nba" />
+
+    <ImageButton
+        android:id="@+id/imageNFL"
+        android:layout_width="190dp"
+        android:layout_height="266dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="nfl"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/imageMLB"
+        app:layout_constraintEnd_toStartOf="@+id/imageNHL"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMLS"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/nfl" />
+
+    <ImageButton
+        android:id="@+id/imageNHL"
+        android:layout_width="178dp"
+        android:layout_height="265dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="nhl"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/imageMLB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageNFL"
+        app:layout_constraintTop_toBottomOf="@+id/imageNBA"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/nhl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
